@@ -46,13 +46,16 @@ public class Main {
         devMariaFernanda.setNome("Maria Fernanda");
         devMariaFernanda.inscricaoBootcamp(bootcamp);
         System.out.println("Bem vindo(a) "+devMariaFernanda.getNome()+ " ao " +bootcamp.getNome());
-        System.out.println("Conteúdos inscritos: "+ devMariaFernanda.getConteudosInscritos());
+        System.out.println("Conteúdos inscritos: ");
+        devMariaFernanda.mostrarConteudosInscritos();
         System.out.println(("Início do Bootcamp: "+ bootcamp.getDataInicialFormatada()+"\n"+"Prazo final: "+bootcamp.getDataFinalFormatada() + "\n"));
         System.out.println("Acompanhe seu progresso: \n");
         devMariaFernanda.progresso();
         devMariaFernanda.progresso();
-        System.out.println("Conteúdos inscritos: "+ devMariaFernanda.getConteudosInscritos());
-        System.out.println("Conteúdos concluídos: "+ devMariaFernanda.getConteudosConcluidos());
+        System.out.println("Conteúdos inscritos: ");
+        devMariaFernanda.mostrarConteudosInscritos();
+        System.out.println("Conteúdos concluídos: ");
+        devMariaFernanda.mostrarConteudosConcluidos();
         System.out.println("XP: " + devMariaFernanda.TotalXP());
 
         System.out.println("\n-------------------------\n");
@@ -61,14 +64,17 @@ public class Main {
         devPaula.setNome("Paula");
         devPaula.inscricaoBootcamp(bootcamp);
         System.out.println("Bem vindo(a) "+devPaula.getNome()+ " ao " +bootcamp.getNome());
-        System.out.println("Conteúdos inscritos: "+ devPaula.getConteudosInscritos());
+        System.out.println("Conteúdos inscritos: ");
+        devPaula.mostrarConteudosInscritos();
         System.out.println(("Início do Bootcamp: "+ bootcamp.getDataInicialFormatada()+"\n"+"Prazo final: "+bootcamp.getDataFinalFormatada() + "\n"));
         System.out.println("Acompanhe seu progresso: \n");
         devPaula.progresso();
         devPaula.progresso();
         devPaula.progresso();
-        System.out.println("Conteúdos inscritos: "+ devPaula.getConteudosInscritos());
-        System.out.println("Conteúdos concluidos: "+ devPaula.getConteudosConcluidos());
+        System.out.println("Conteúdos inscritos: ");
+        devPaula.mostrarConteudosInscritos();
+        System.out.println("Conteúdos concluídos: ");
+        devPaula.mostrarConteudosConcluidos();
         System.out.println("XP: " + devPaula.TotalXP());
 
     }

@@ -73,4 +73,14 @@ public class Dev {
     public int hashCode() {
         return Objects.hash(nome, conteudosInscritos, conteudosConcluidos);
     }
+
+
+    public void mostrarConteudosInscritos(){
+        getConteudosInscritos().stream().forEach(inscrito -> System.out.println("Título: "+inscrito.getTitulo()+"\nDescrição: "+inscrito.getDescricao()+"\n"));
+
+    }
+
+    public void mostrarConteudosConcluidos(){
+        getConteudosConcluidos().stream().forEach(concluido -> System.out.println("Título: "+concluido.getTitulo()+"\nDescrição: "+concluido.getDescricao()+"\n"));
+    }
 }
