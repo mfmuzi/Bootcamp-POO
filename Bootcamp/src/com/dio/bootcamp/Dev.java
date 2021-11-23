@@ -75,12 +75,13 @@ public class Dev {
     }
 
 
-    public void mostrarConteudosInscritos(){
-        getConteudosInscritos().stream().forEach(inscrito -> System.out.println("Título: "+inscrito.getTitulo()+"\nDescrição: "+inscrito.getDescricao()+"\n"));
+    public void mostrarConteudosInscritos() {
+
+        this.getConteudosInscritos().stream().forEach(inscritos -> System.out.println(inscritos));
 
     }
 
     public void mostrarConteudosConcluidos(){
-        getConteudosConcluidos().stream().forEach(concluido -> System.out.println("Título: "+concluido.getTitulo()+"\nDescrição: "+concluido.getDescricao()+"\n"));
+        this.getConteudosConcluidos().stream().forEach(concluidos -> System.out.println(concluidos));
     }
 }

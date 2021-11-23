@@ -11,22 +11,22 @@ public class Main {
         DateTimeFormatter formatado = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
         Curso curso1 = new Curso();
-        curso1.setTitulo("Curso Java");
+        curso1.setTitulo("Java");
         curso1.setDescricao("Curso voltado para ensinamentos em Java");
         curso1.setCargaHoraria(8);
 
         Curso curso2 = new Curso();
-        curso2.setTitulo("Curso JavaScript");
+        curso2.setTitulo("JavaScript");
         curso2.setDescricao("Curso voltado para ensinamentos em JavaScript");
         curso2.setCargaHoraria(4);
 
         Mentoria mentoriaJava = new Mentoria();
-        mentoriaJava.setTitulo("Mentoria em Java");
+        mentoriaJava.setTitulo("Java");
         mentoriaJava.setDescricao("Mentoria para as aulas de Java");
         mentoriaJava.setData(LocalDate.now().format(formatado));
 
         Mentoria mentoriaJavaScript = new Mentoria();
-        mentoriaJavaScript.setTitulo("Mentoria em JavaScript");
+        mentoriaJavaScript.setTitulo("JavaScript");
         mentoriaJavaScript.setDescricao("Mentoria para as aulas de JavaScript");
         mentoriaJavaScript.setData(LocalDate.now().plusDays(1).format(formatado));
 
@@ -38,7 +38,6 @@ public class Main {
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoriaJava);
         bootcamp.getConteudos().add(mentoriaJavaScript);
-
 
 
 
