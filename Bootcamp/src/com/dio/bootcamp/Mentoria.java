@@ -24,10 +24,8 @@ public class Mentoria extends Conteudo{
 
 
     @Override
-
     public String toString() {
 
-        return String.format("Mentoria: %s\nDescrição: %s\nData: %s\n", getTitulo(), getDescricao(), data.toString());
-
+        return String.format("Mentoria: %s\nDescrição: %s\nData: %s\n", getTitulo(), getDescricao(), data);
     }
 }

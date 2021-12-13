@@ -34,7 +34,6 @@ public class Dev {
                 .stream()
                 .mapToDouble(Conteudo::calcularXP)
                 .sum();
-
     }
 
     public String getNome() {
@@ -77,11 +76,11 @@ public class Dev {
 
     public void mostrarConteudosInscritos() {
 
-        this.getConteudosInscritos().stream().forEach(inscritos -> System.out.println(inscritos));
+        this.getConteudosInscritos().forEach(System.out::println);
 
     }
 
     public void mostrarConteudosConcluidos(){
-        this.getConteudosConcluidos().stream().forEach(concluidos -> System.out.println(concluidos));
+        this.getConteudosConcluidos().forEach(System.out::println);
     }
 }

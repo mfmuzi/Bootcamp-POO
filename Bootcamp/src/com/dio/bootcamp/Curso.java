@@ -13,7 +13,6 @@ public class Curso extends Conteudo{
     public Curso() {
     }
 
-
     public int getCargaHoraria() {
         return cargaHoraria;
     }
@@ -22,12 +21,9 @@ public class Curso extends Conteudo{
         this.cargaHoraria = cargaHoraria;
     }
 
-
     @Override
-
     public String toString() {
 
         return String.format("Curso: %s \nDescrição: %s \nDuração: %d horas\n", getTitulo(), getDescricao(), getCargaHoraria());
-
     }
 }
